@@ -21,6 +21,8 @@ def index():
         for x in ban:
             if x in query:
                 return "Filtered.."
+        for x in range(1,11):
+            print(x)
 
         proc = subprocess.Popen(["sqlite3", dbpath, query], stdout=subprocess.PIPE)
         (out, err) = proc.communicate()
