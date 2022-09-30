@@ -54,6 +54,7 @@ class q42
                 sum=sum + i;
                 System.out.println("Sum After thread:[" + id + "] i:[" + i + "]=" + sum);
                 Thread.sleep(10);
+		System.out.println("done....");
             }
         }
         System.out.println("Sum t:[" + id + "]=" + sum);
